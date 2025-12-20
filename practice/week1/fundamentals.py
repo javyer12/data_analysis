@@ -50,3 +50,64 @@
 # numbers.pop() # remove last element
 # print(numbers)
 
+# Dictionary List
+# students = [
+#     {"name": "Alice", "age": 20, "grade": 88},
+#     {"name": "Bob", "age": 22, "grade": 92},
+#     {"name": "Charlie", "age": 19, "grade": 79}
+# ]
+# student = {
+#     "name": "Bradly",
+#     "age":21,
+#     "grade":85
+# }
+# iterate through dictionary
+# for key, value in student.items():
+#     print(key, ":", value)
+# iterate through dictionary= first one[0]
+# for  key, value in students[0].items():
+#     print(key, ":", value)
+
+#  iterate through list of dictionaries
+# for student  in students:
+#     print(student["name"], "is", student["age"], "years old and scored", student["grade"])
+
+# product ={
+#     "name": "Laptop",
+#     "brand": "Dell",
+#     "price": 1200,
+#     "specs": {
+#         "processor": "Intel i7",
+#         "ram": "16GB",
+#         "storage": "512GB SSD"
+#     },
+#     "in_stock": True
+# }
+# product["in_stock"] = False  # update value
+
+# for key, value in product.items():
+#     print(key)
+
+# SET= Conjuntos  List=[], set={}, dict={key,value}, tupla=()
+# fruit = {"apple", "banana", "cherry"}
+# fruit.add("orange")
+# fruit.remove("banana")
+# print(fruit)
+
+# List comprehension
+# squares = [x**2 for x in range(11)]
+# print(squares)  
+
+def practice(number_list):
+    # return a even list
+    even_numbers = [x for x in number_list if x % 2 == 0]
+    print("Even number with List: ", even_numbers)
+    # return a set of unique numbers
+    unique_numbers = {x for x in [2,3,2,3,2,5,6,6,3,8,7]}
+    print("Unique numbers with Set: ", unique_numbers)
+
+    # return a dic with a square of each number
+    square_dic = {x: x**2 for x in number_list}
+    print("Square of each number with Dict: ", square_dic)
+
+practice([1,2,3,4,5,6,7,8,9,10])
