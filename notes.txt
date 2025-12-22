@@ -1,0 +1,1 @@
+# pip freeze > requirements.txt -> crear el archivo requirements.txt para guardar las dependencias
