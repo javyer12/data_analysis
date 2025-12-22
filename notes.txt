@@ -1,1 +1,2 @@
-# pip freeze > requirements.txt -> crear el archivo requirements.txt para guardar las dependencias
+# pip freeze > requirement.txt -> crear el archivo requirements.txt para guardar las dependencias
+# pip install -r requirement.txt -> Instalar las dependencias en requirements.txt
