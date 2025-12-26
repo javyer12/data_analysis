@@ -1,7 +1,8 @@
 from processor.tools import to_lowercase_strip
 from processor.tools import to_lowercase_add_space
 
-# print(to_lowercase("Hello World"))  # Output: hello/world
+
+print(to_lowercase("Hello World"))  # Output: hello/world
 data = input("Enter some text with or without spaces: ")
 try:
     if " " in data: 
@@ -16,3 +17,4 @@ try:
         print("File written successfully -> ", data, " on ", file.name)
 except FileNotFoundError as e: print("Error: File not found", e)
 finally: print("Execution completed.")
+
