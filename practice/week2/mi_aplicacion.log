@@ -1,0 +1,50 @@
+ File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 706, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 675, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 466, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'messageS'
+Call stack:
+  File "/Users/franciscomurillo/Documents/L_proyects/data_analysis/practice/week2/logger.py", line 37, in <module>
+    logger.error('Error: No se pudo procesar el archivo X.')
+Message: 'Error: No se pudo procesar el archivo X.'
+Arguments: ()
+(venv) (base) franciscomurillo@MacBookAir week2 % clear
+(venv) (base) franciscomurillo@MacBookAir week2 % python3 logger.py
+--- Logging error ---
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 464, in format
+    return self._format(record)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 460, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'messageS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 706, in format
+    s = self.formatMessage(record)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 675, in formatMessage
+    return self._style.format(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/logging/__init__.py", line 466, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'messageS'
+Call stack:
+  File "/Users/franciscomurillo/Documents/L_proyects/data_analysis/practice/week2/logger.py", line 37, in <module>
+    f.write(logger.debug('Este es un mensaje de depuración (no sale en consola)') )
+Message: 'Este es un mensaje de depuración (no sale en consola)'
+Arguments: ()
+Ocurrió un error al escribir en el archivo de log: write() argument must be str, not None

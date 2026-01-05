@@ -2,7 +2,7 @@ from processor.tools import to_lowercase_strip
 from processor.tools import to_lowercase_add_space
 
 
-print(to_lowercase("Hello World"))  # Output: hello/world
+# print(to_lowercase("Hello World"))  # Output: hello/world
 data = input("Enter some text with or without spaces: ")
 try:
     if " " in data: 
