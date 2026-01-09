@@ -62,7 +62,7 @@ class Form(QtWidgets.QDialog):
                 print(current_time)
                 sys.exit()
             break 
-
+ 
             time.sleep(30)
 # class MyWidget(QtWidgets.QWidget):
 #     def __init__(self):
